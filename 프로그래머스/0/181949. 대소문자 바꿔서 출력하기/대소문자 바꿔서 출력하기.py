@@ -1,7 +1,2 @@
 str = input()
-for i in str:
-    if i.islower():
-        i = i.upper()
-    else:
-        i = i.lower()
-    print(i, end="")
+print(''.join(i.upper() if i == i.lower() else i.lower() for i in str))
